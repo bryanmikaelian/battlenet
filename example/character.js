@@ -1,14 +1,16 @@
 var bnet = require("../lib/battlenet");
 
-bnet.region = "us";
+var char = {
+  region: "us",
+  name: "Uther",
+  realm: "Medivh" 
+};
 
-// Without fields
-bnet.character("Medivh", "Uther", "", function(c) {
-  // do something
+bnet.character(char, function(c) {
+
+  // Code
 
 });
 
-// With fields
-bnet.character("Medivh ", "Uther", "guild,talents", function(c) {
-  console.log(c);
-});
+
+
