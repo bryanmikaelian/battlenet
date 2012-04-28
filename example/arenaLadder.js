@@ -11,7 +11,7 @@ var arenaLadder = {
 }
 
 bnet.arenaLadder(arenaLadder, function(l) {
-  console.log(l);
+
 });
 
 
