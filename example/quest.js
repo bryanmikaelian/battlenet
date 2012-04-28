@@ -1,13 +1,14 @@
 var bnet = require("../lib/battlenet");
 
-bnet.region = "us";
+var quest = {
+  region: "us",
+  id: 13157
+};
 
-var questID = 13157;
-
-bnet.quest(questID, function(q) {
-  // do something
+bnet.quest(quest, function(q) {
 
 });
+
 
 
 
