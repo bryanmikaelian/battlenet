@@ -6,7 +6,7 @@ A wrapper for the Battle.net API written in Node JS
 Install
 =========
 ```
-npm install battlenet-node
+npm install bnet
 ```
 
 
