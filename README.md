@@ -4,12 +4,24 @@ battlenet
 A wrapper for the Battle.net API written in Node JS
 
 
-## Usage
+ Usage
+=========
+Each resource allows you to pass in an object with various parameters.
+For example, here is how you could get a character's profile along with
+the guild and stats query string parameters:
+
 
 ```javascript
-var bnet = require("battlenet");
+var char = {
+  region: "us",
+  name: "Uther",
+  realm: "Medivh",
+  fields: ["guild", "stats"] 
+};
 
-bnet.character("Medivh", "Uther", function(c) {
-  console.log(c.name);
+bnet.character(char, function(c) {
+  console.log("Hello there " + c.name);
 });
+
+
 ```
