@@ -20,7 +20,7 @@ var char = {
 };
 
 bnet.character(char, function(c) {
-  console.log("Hello there " + c.name);
+  console.log("Hello there " + c.name);  // returns "Hello there Uther"
 });
 
 
