@@ -1,14 +1,13 @@
 var bnet = require("../lib/battlenet");
 
-bnet.region = "us";
+var item  = {
+  region: "us",
+  id: 765,
+};
 
-var silverLeaf = 765;
-
-bnet.item(silverLeaf, function(i) {
-  // do something
+bnet.item(item, function(i) {
 
 });
-
 
 
 
