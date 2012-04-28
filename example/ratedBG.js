@@ -1,12 +1,15 @@
 var bnet = require("../lib/battlenet");
 
-bnet.region = "us";
+var bgLadder = {
+  region: "us",
+  page: 1,
+  size: 50,
+  asc: true
+}
 
-bnet.ratedBG(function(bg) {
-  // do something
+bnet.ratedBG(bgLadder, function(bgl) {
 
 });
-
 
 
 
