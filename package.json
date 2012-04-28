@@ -1,0 +1,20 @@
+{
+  "author": "Bryan Mikaelian <bryan.mikaelian@gmail.com>",
+  "name": "battlenet",
+  "description": "\"A Node JS wrapper for the Battle.net API\"",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bryanmikaelian/battlenet",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bryanmikaelian/battlenet.git"
+  },
+  "main": "./lib/battlenet.js",
+  "dependencies": {
+    "scoped-http-client": "0.9.6",
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
