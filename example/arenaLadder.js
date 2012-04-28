@@ -1,10 +1,17 @@
 var bnet = require("../lib/battlenet");
 
-bnet.region = "us";
+var arenaLadder = {
+  region: "us",
+  battlegroup: "Vindication",
+  teamSize: bnet.arenaTeamSizes.twovtwo,
+  fields: {
+    size: 50,
+    asc: true
+  }
+}
 
-bnet.arenaLadder("Ruin", "2v2", function(l) {
-  // do something
-
+bnet.arenaLadder(arenaLadder, function(l) {
+  console.log(l);
 });
 
 
