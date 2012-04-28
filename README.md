@@ -18,6 +18,8 @@ the guild and stats query string parameters:
 
 
 ```javascript
+var bnet = require("bnet");
+
 var char = {
   region: "us",
   name: "Uther",
