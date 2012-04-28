@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Battlenet by bryanmikaelian</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Battlenet</h1>
+        <h2>A wrapper for the Battle.net API written in Node JS</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/bryanmikaelian/battlenet/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/bryanmikaelian/battlenet/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/bryanmikaelian/battlenet" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>battlenet</h1>
+
+<p>A wrapper for the Battle.net API written in Node JS</p>
+
+<h1>Install</h1>
+
+<pre><code>npm install bnet
+</code></pre>
+
+<h1> Usage</h1>
+
+<p>Each resource allows you to pass in an object with various parameters.
+For example, here is how you could get a character's profile along with
+the guild and stats query string parameters:</p>
+
+<div class="highlight">
+<pre><span class="kd">var</span> <span class="nx">bnet</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"bnet"</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="kr">char</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">region</span><span class="o">:</span> <span class="s2">"us"</span><span class="p">,</span>
+  <span class="nx">name</span><span class="o">:</span> <span class="s2">"Uther"</span><span class="p">,</span>
+  <span class="nx">realm</span><span class="o">:</span> <span class="s2">"Medivh"</span><span class="p">,</span>
+  <span class="nx">fields</span><span class="o">:</span> <span class="p">[</span><span class="s2">"guild"</span><span class="p">,</span> <span class="s2">"stats"</span><span class="p">]</span> 
+<span class="p">};</span>
+
+<span class="nx">bnet</span><span class="p">.</span><span class="nx">character</span><span class="p">(</span><span class="kr">char</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Hello there "</span> <span class="o">+</span> <span class="nx">c</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>  <span class="c1">// returns "Hello there Uther"</span>
+<span class="p">});</span>
+
+</pre>
+</div>
+
+
+<p>All requests are returned in JSON format, allowing you to easily work
+with the data collections.</p>
+
+<h1>More examples</h1>
+
+<p>See the examples directory.</p>
+      </section>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-31203779-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
