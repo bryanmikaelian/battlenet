@@ -1,9 +1,11 @@
 var bnet = require("../lib/battlenet");
 
-bnet.region = "us";
+var realm = {
+  region: "us",
+  realms: ["Alleria", "Tichondrius"]
+};
 
-bnet.realm(function(g) {
-  // do something
+bnet.realm(realm, function(r) {
 
 });
 
