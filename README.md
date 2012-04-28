@@ -23,5 +23,13 @@ bnet.character(char, function(c) {
   console.log("Hello there " + c.name);  // returns "Hello there Uther"
 });
 
-
 ```
+
+All requests are returned in JSON format, allowing you to easily work
+with the data collections.
+
+
+More examples
+=========
+
+See the examples directory.
