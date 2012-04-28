@@ -1,9 +1,16 @@
 var bnet = require("../lib/battlenet");
 
-bnet.region = "us";
+var guild = {
+  region: "us",
+  realm: "Medivh",
+  name: "Awesome Guild",
+  fields: ["members"]
+};
 
-bnet.guild("Medivh", "Knights of the Silver Hand", "", function(g) {
-  // do something
+bnet.guild(guild, function(g) {
+
 });
+
+
 
 
