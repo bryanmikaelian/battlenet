@@ -1,7 +1,13 @@
 var bnet = require("../lib/battlenet");
 
-bnet.region = "us";
+var auct  = {
+  region: "us",
+  realm: "Alleria",
+};
 
-bnet.auctions("Medivh", function(c) {
+bnet.auctions(auct, function(a) {
 
 });
+
+
+
