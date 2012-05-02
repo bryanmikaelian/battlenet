@@ -2,7 +2,7 @@
   "author": "Bryan Mikaelian <bryan.mikaelian@gmail.com>",
   "name": "bnet",
   "description": "\"A Node JS wrapper for the Battle.net API\"",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/bryanmikaelian/battlenet",
   "repository": {
     "type": "git",
