@@ -27,3 +27,8 @@ bnet.data.guildPerks("us", function (d) {
 bnet.data.guildAchievements("us", function (d) {
 
 });
+
+
+bnet.data.itemClasses("us", function (d) {
+
+});
